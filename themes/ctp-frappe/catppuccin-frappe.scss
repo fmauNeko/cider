@@ -1442,12 +1442,20 @@ body.body--dark {
   }
 
   /* ChromeButton */
-  [sfc-name='ChromeButton'] {
-    --musicKeyColor: var(--accent);
-    --qDark: var(--base);
-    --qDarkHUD: var(--surface0);
-    .chrome-button:hover {
-      background-color: var(--surface1);
+  .chrome-button:hover {
+    background-color: var(--selection-bg);
+  }
+  .chrome-button.active {
+    background-color: var(--selection-bg);
+  }
+
+  /* NavFlipper */
+  [sfc-name='NavFlipper'] {
+    button {
+      color: var(--text);
+    }
+    button:before {
+      background-color: var(--selection-bg);
     }
   }
 
