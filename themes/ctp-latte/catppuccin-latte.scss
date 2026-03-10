@@ -1170,4 +1170,128 @@ body.body--light {
       color: var(--accent);
     }
   }
+
+  /* Media Item Rating */
+  [sfc-name='MediaItemRating'] {
+    .rating-icon {
+      color: var(--subtext0);
+    }
+  }
+
+  /* Window Style Picker */
+  [sfc-name='WindowStyle'] {
+    .layout-card {
+      background: var(--surface0);
+    }
+
+    .layout-card.selected {
+      border-color: var(--accent);
+    }
+  }
+
+  /* Solarium Player */
+  [sfc-name='SolariumPlayer'] {
+    .solarium-container {
+      background: var(--base);
+      color: var(--text);
+    }
+
+    .c-metadata {
+      .song-name {
+        color: var(--text);
+      }
+
+      .release-info, .source-info-display {
+        color: var(--subtext1);
+      }
+    }
+
+    .quality-badge {
+      background: var(--selection-bg);
+      color: var(--accent);
+    }
+
+    .pt-tab-bar {
+      background: var(--mantle);
+    }
+
+    .pt-tab {
+      color: var(--text);
+    }
+
+    .pt-tab--active {
+      color: var(--accent);
+    }
+
+    .cider-sidebar {
+      background: var(--crust);
+
+      .sidebar-group, .sidebar-widget {
+        background: var(--mantle);
+      }
+
+      .sidebar-icon {
+        color: var(--accent);
+      }
+
+      .sidebar-scroll-content {
+        color: var(--text);
+      }
+    }
+
+    .solarium-lyric-display {
+      .lyric-word {
+        --defaultColor: var(--text);
+        --gradientColor: var(--accent);
+      }
+
+      .lyric-text, .lyric-text-translated, .rich-lyric-line {
+        color: var(--text);
+        opacity: 1;
+      }
+
+      .active .lyric-text {
+        color: var(--accent);
+      }
+    }
+  }
+
+  /* Solarium Lyric Display */
+  [sfc-name='SolariumLyricDisplay'] {
+    .amp-lyrics_viewport, .rich-lyric-container {
+      background: var(--base);
+    }
+
+    .lyric-word {
+      --defaultColor: var(--text);
+      --gradientColor: var(--accent);
+    }
+
+    .lyric-text, .lyric-text-translated, .rich-lyric-line {
+      color: var(--text);
+      opacity: 1;
+    }
+
+    .active .lyric-text {
+      color: var(--accent);
+    }
+  }
+
+  /* Playlist Editor */
+  [sfc-name='PlaylistEditor'] {
+    background: var(--base);
+    color: var(--text);
+  }
+
+  /* Album (Standalone) */
+  [sfc-name='Album'] {
+    background: var(--base);
+    color: var(--text);
+  }
+
+  /* Library Artist / Library Artist View */
+  [sfc-name='LibraryArtist'], [sfc-name='LibraryArtistView'] {
+    background: var(--base);
+    color: var(--text);
+  }
 }
