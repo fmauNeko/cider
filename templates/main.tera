@@ -41,6 +41,8 @@ body.body--{{ if(cond=flavor.dark, t="dark", f="light") }} {
   --qDark: #{{ base.hex }};
   --qDarkHUD: {{ base | mod(opacity=0.658) | css_rgba }};
   --qDarkPage: #{{ crust.hex }};
+  --q-dark: #{{ base.hex }};
+  --q-dark-page: #{{ crust.hex }};
   --mats-darkBackgroundBase: #{{ base.hex }};
   --mats-lightBackgroundBase: #{{ base.hex }};
   --contextMenuBorderColor: var(--surface0);
