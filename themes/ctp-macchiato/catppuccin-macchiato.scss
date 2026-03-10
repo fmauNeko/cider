@@ -8,6 +8,8 @@ body.body--dark {
   --overlay1: #8087a2;
   --overlay0: #6e738d;
   --surface0: #363a4f;
+  --surface1: #494d64;
+  --surface2: #5b6078;
   --base: #24273a;
   --mantle: #1e2030;
   --crust: #181926;
@@ -1295,5 +1297,295 @@ body.body--dark {
   [sfc-name='LibraryArtist'], [sfc-name='LibraryArtistView'] {
     background: var(--base);
     color: var(--text);
+  }
+
+  /* ============================================================ */
+  /* Cider v4 Components */
+  /* ============================================================ */
+
+  /* Fix: Page Background */
+  .new-shell-page-container {
+    background: var(--base);
+  }
+
+  /* Concerts — Cards */
+  .concert-card {
+    background: var(--surface0);
+  }
+
+  .concert-card:hover {
+    background: var(--surface1);
+  }
+
+  .main-concert-card {
+    background: var(--surface0);
+  }
+
+  .concert-setlist-card {
+    background: var(--surface0);
+  }
+
+  /* Concerts — Date Badge */
+  .date-badge .month {
+    background: var(--red);
+    color: var(--text);
+  }
+
+  .date-badge .day {
+    background: var(--surface0);
+    color: var(--text);
+  }
+
+  /* Concerts — Action Buttons */
+  .main-concert-card .q-btn.bg-white {
+    background: var(--accent);
+    color: var(--crust);
+  }
+
+  /* LCD Players */
+  [sfc-name='LCDPlayer'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    color: var(--text);
+  }
+
+  [sfc-name='LCDPlayerGlass'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    color: var(--text);
+
+    .player {
+      background: var(--surface0);
+      box-shadow: inset 0 0 0 1px var(--overlay0);
+    }
+  }
+
+  [sfc-name='LCDPlayerTop'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    color: var(--text);
+
+    .artwork {
+      background: var(--surface0);
+    }
+  }
+
+  /* AMPLCD */
+  [sfc-name='AMPLCD'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    color: var(--text);
+
+    .player {
+      background: var(--surface0);
+      box-shadow: inset 0 0 0 1px var(--overlay0);
+    }
+  }
+
+  /* Concerts Pages */
+  [sfc-name='Concerts'] {
+    background: var(--base);
+    color: var(--text);
+  }
+
+  [sfc-name='ConcertsHub'] {
+    background: var(--base);
+    color: var(--text);
+  }
+
+  /* Concert Card Views */
+  [sfc-name='ConcertCardView'] {
+    background: var(--surface0);
+    color: var(--text);
+  }
+
+  [sfc-name='ConcertHubCardView'] {
+    background: var(--surface0);
+    color: var(--text);
+  }
+
+  /* PodcastsPage */
+  [sfc-name='PodcastsPage'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    color: var(--text);
+
+    .podcast-info-window {
+      --bgColor: var(--base);
+    }
+  }
+
+  /* SocialProfile */
+  [sfc-name='SocialProfile'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    .profile-artwork {
+      background: var(--surface0);
+    }
+  }
+
+  /* SocialBadge */
+  [sfc-name='SocialBadge'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    .social-badge {
+      background: var(--surface0);
+      border-color: var(--overlay0);
+    }
+  }
+
+  /* ChromeButton */
+  [sfc-name='ChromeButton'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    .chrome-button:hover {
+      background-color: var(--surface1);
+    }
+  }
+
+  /* VolumePopup */
+  [sfc-name='VolumePopup'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    .custom-volume-popup {
+      background: var(--surface0);
+    }
+    .custom-tooltip {
+      background: var(--crust);
+      color: var(--text);
+    }
+  }
+
+  /* CalendarDateBadge */
+  [sfc-name='CalendarDateBadge'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    .date-badge {
+      background: var(--surface0);
+    }
+  }
+
+  /* UpcomingConcertBadge */
+  [sfc-name='UpcomingConcertBadge'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    .upcoming-concert-badge {
+      background: linear-gradient(135deg, var(--accent), var(--accent));
+      color: var(--crust);
+    }
+  }
+
+  /* LiveBadge */
+  [sfc-name='LiveBadge'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    .overlay-progress-bar {
+      --progressColor: var(--text);
+    }
+  }
+
+  /* HUDBtn */
+  [sfc-name='HUDBtn'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    .more-btn {
+      background-color: var(--surface0);
+      &:hover {
+        background-color: var(--surface1);
+      }
+      &:focus {
+        outline-color: var(--accent);
+      }
+    }
+  }
+
+  /* SuperHeroItem */
+  [sfc-name='SuperHeroItem'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    .more-like-container {
+      .headline {
+        color: var(--subtext1);
+      }
+      .title {
+        color: var(--text);
+      }
+    }
+  }
+
+  /* PlaylistFolder */
+  [sfc-name='PlaylistFolder'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    .folder-mosaic {
+      background: var(--surface0);
+      &.folder-mosaic--quad,
+      &.folder-mosaic--tri {
+        background: var(--surface1);
+      }
+    }
+    .mosaic-cell {
+      background: var(--surface0);
+    }
+    .mosaic-placeholder {
+      background: var(--surface0);
+    }
+  }
+
+  /* KeyBadge */
+  [sfc-name='KeyBadge'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+  }
+
+  /* AMPlaybackActions */
+  [sfc-name='AMPlaybackActions'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    .playback-action-button {
+      &:before {
+        background: var(--surface1);
+      }
+      &.action-small.action-active {
+        color: var(--accent);
+      }
+    }
+  }
+
+  /* AMSidebar */
+  [sfc-name='AMSidebar'] {
+    --musicKeyColor: var(--accent);
+    --qDark: var(--base);
+    --qDarkHUD: var(--surface0);
+    .sidebar_nav-btn {
+      color: var(--text);
+      &:hover {
+        background: var(--surface1);
+      }
+      &:active {
+        background-color: var(--surface2);
+      }
+      &.active {
+        background: var(--accent);
+        color: var(--crust);
+      }
+    }
   }
 }
