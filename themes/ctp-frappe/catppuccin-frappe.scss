@@ -31,6 +31,12 @@ body.body--dark {
   --musicKeyColor: var(--accent);
   --tracklistAltRowColor: var(--mantle);
   --vibrantDivider: var(--surface0);
+  --qDark: #303446;
+  --qDarkHUD: rgba(48, 52, 70, 0.66);
+  --qDarkPage: #232634;
+  --mats-darkBackgroundBase: #303446;
+  --mats-lightBackgroundBase: #303446;
+  --contextMenuBorderColor: var(--surface0);
   --q-primary: var(--accent);
   --q-info: var(--blue);
 
@@ -251,25 +257,10 @@ body.body--dark {
     background: var(--base);
     color: var(--text);
 
-    .detail-content {
-      .blurb-text, .meta-data {
-        color: var(--subtext1);
-      }
-
-      .chip-name {
-        opacity: 1;
-        color: var(--accent);
-      }
-
-      .chip-favorite [sfc-name='QIcon'] {
-        color: var(--accent);
-      }
-    }
-
     [sfc-name='Playlist'], [sfc-name='Album'] {
       [sfc-name='AlbumHeader'], [sfc-name='AlbumHeaderMobile'] {
         [sfc-name='ArtistChip'] {
-          .chip-name, .chip-favorite .chip-fav-btn {
+          .chip-name {
             color: var(--accent);
             opacity: 1;
           }
@@ -405,14 +396,6 @@ body.body--dark {
           }
         }
       }
-    }
-
-    .replaced-btn {
-      color: var(--accent);
-    }
-
-    .replaced-btn:before {
-      background: var(--surface0);
     }
 
     [sfc-name='PowerSwoosh'] {
@@ -931,33 +914,6 @@ body.body--dark {
 
     [sfc-name='NIcon'] {
       color: var(--accent);
-    }
-  }
-
-  /* Themes / Plugins Card */
-  [data-v-ec8b2100][sfc-name='QCard'] {
-    background-color: var(--base);
-    color: var(--text);
-
-    [sfc-name='QItemLabel'], .title-text, [sfc-name='QItemSection'], button.close [sfc-name='QIcon'] {
-      color: var(--text);
-    }
-
-    button .qb-item-content {
-      color: var(--crust);
-    }
-  }
-
-  /* Multi Artist Picker */
-  .artist-picker-modal {
-    background-color: var(--base);
-
-    [sfc-name='QItemSection'], .modal-titlebar-content, .close {
-      color: var(--text);
-    }
-
-    .q-item-type+.q-item-type {
-      border-top-color: var(--surface0);
     }
   }
 
