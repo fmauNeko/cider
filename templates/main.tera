@@ -1496,7 +1496,7 @@ body.body--{{ if(cond=flavor.dark, t="dark", f="light") }} {
     --qDark: var(--base);
     --qDarkHUD: var(--surface0);
     .upcoming-concert-badge {
-      background: linear-gradient(135deg, var(--accent), var(--accent));
+      background: var(--accent);
       color: var(--crust);
     }
   }
